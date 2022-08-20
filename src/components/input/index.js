@@ -2,9 +2,13 @@ import React from "react"
 
 import './input.css'
 
-export const Input = () => (
-    <div className="input-wrap">
-        <input className="input-field"/>
-        <button className="input-button">+</button>
-    </div>
-)
+export const Input = () => {
+    const handleOnChange = () => {
+    }
+    return (
+        <div className="input-wrap">
+            <input className="input-field" onChange={handleOnChange}/>
+            <button className="input-button">+</button>
+        </div>
+    )
+}

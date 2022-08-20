@@ -1,11 +1,12 @@
 import React from "react";
 import './card.css'
 
-export const Card = () => (
+export const Card = ({city}) => {
+    return (
     <div className="card">
         <div className="main__info">
             <img className="icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="icon"/>
-            <div className="title">New York</div>
+            <div className="title">{city}</div>
             <div className="description">Cloudly</div>
             <div className="temperature">20</div>
         </div>
@@ -14,4 +15,5 @@ export const Card = () => (
             <div>Feels like: 19</div>
         </div>
     </div>
-)
+    )
+}
